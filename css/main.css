@@ -99,13 +99,17 @@ Grid
   margin: 0;
 }
 
+.topic {
+  margin: 1.3rem 1rem;
+}
+
 header {
   margin: 0;
 }
 
 .title-description {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -118,20 +122,17 @@ header {
 
 .hero h1 {
   padding: 8rem 0 8rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.hero {
+  text-align: center;
+  display: inline-block;
+  width: 80%;
+  margin: 0 10%;
 }
 
 
-@media only screen and (min-width: 640px) {
-
-  .hero {
-    text-align: center;
-    display: inline-block;
-    width: 50%;
-    margin: 0 25%;
-  }
-
-}
 
 /*-----------------------------------------------------------------
 Primary navigation
@@ -151,9 +152,9 @@ Primary navigation
 }
 
 .nav li {
-  display: block;
+  display: inline-block;
   margin: 0 2rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0;
 }
 
 @media only screen and (min-width: 430px) {
