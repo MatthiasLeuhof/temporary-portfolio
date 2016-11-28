@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------
+Viewport and borderbox
+-----------------------------------------------------------------*/
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -18,7 +22,50 @@ html {
   box-sizing: inherit;
 }
 
+/*-----------------------------------------------------------------
+Main styling
+-----------------------------------------------------------------*/
+
+body {
+  color: #444;
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1.3rem;
   font-family: "Roboto", "Georgia", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*-----------------------------------------------------------------
+Grid
+-----------------------------------------------------------------*/
+
+.row {
+  width: 100%;
+}
+
+.hero {
+  height: 80vh;
+}
+
+/*-----------------------------------------------------------------
+Primary navigation
+-----------------------------------------------------------------*/
+
+.nav {
+  padding: 0;
+  text-align: center;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0 4rem;
 }
